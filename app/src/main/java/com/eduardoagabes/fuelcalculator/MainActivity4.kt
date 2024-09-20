@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main4)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_iniciar)
+        val btnIniciar = findViewById<Button>(R.id.btn_proximo3)
 
         btnIniciar.setOnClickListener {
 
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, activity_result::class.java)
             startActivity(intent)
 
         }
