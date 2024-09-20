@@ -7,14 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_iniciar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="24dp"
         android:backgroundTint="@color/blue"
-        android:text="Iniciar"
+        android:text="@string/iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -23,10 +22,10 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginEnd="48sp"
-        android:layout_marginBottom="8sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="Calculadora de gasto de combustível"
         android:textSize="29sp"
@@ -39,13 +38,13 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48sp"
-        android:layout_marginTop="8sp"
-        android:layout_marginEnd="48sp"
-        android:layout_marginBottom="80sp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="72dp"
         android:gravity="center"
         android:text="Nao tem ideia de quanto vai gastar de gasolina na sua viagem? Entao está no lugar certo"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_iniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
