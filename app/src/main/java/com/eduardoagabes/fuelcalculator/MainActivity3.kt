@@ -18,6 +18,8 @@ class MainActivity3 : AppCompatActivity() {
         val btnIniciar = findViewById<Button>(R.id.btn_proximo2)
         val edtConsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
 
+        val preco = intent.getBundleExtra("123")
+
         btnIniciar.setOnClickListener {
 
             val consumo = edtConsumo.text
@@ -31,8 +33,9 @@ class MainActivity3 : AppCompatActivity() {
                 ).show()
             } else {
 
-                intent.putExtra("123", consumo)
                 val intent = Intent(this, MainActivity4::class.java)
+                intent.putExtra("123", preco)
+                intent.putExtra("123", consumo)
                 startActivity(intent)
             }
         }
