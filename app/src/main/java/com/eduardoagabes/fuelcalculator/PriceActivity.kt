@@ -3,18 +3,14 @@ package com.eduardoagabes.fuelcalculator
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
-class MainActivity2 : AppCompatActivity() {
+class PriceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_price)
 
         val btnIniciar = findViewById<Button>(R.id.btn_proximo)
         val edtPreco = findViewById<TextInputEditText>(R.id.edt_preco)
@@ -22,7 +18,6 @@ class MainActivity2 : AppCompatActivity() {
         btnIniciar.setOnClickListener {
 
             val precoStr: String = edtPreco.text.toString()
-            val preco = edtPreco.text
 
             if (precoStr == "") {
                 Snackbar.make(
@@ -32,7 +27,9 @@ class MainActivity2 : AppCompatActivity() {
                 ).show()
             } else {
 
-                val intent = Intent(this, MainActivity3::class.java)
+                val preco = precoStr.toFloat()
+
+                val intent = Intent(this, ConsumptionActivity::class.java)
                 intent.putExtra("preco", preco)
                 startActivity(intent)
             }

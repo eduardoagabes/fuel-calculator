@@ -3,10 +3,7 @@ package com.eduardoagabes.fuelcalculator
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         btnIniciar.setOnClickListener {
 
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, PriceActivity::class.java)
             startActivity(intent)
 
         }
