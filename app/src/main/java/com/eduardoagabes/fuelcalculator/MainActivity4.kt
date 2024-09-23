@@ -15,7 +15,7 @@ class MainActivity4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main4)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_proximo3)
+        val btnIniciar = findViewById<Button>(R.id.btn_proximo_3)
         val edtDistancia = findViewById<TextInputEditText>(R.id.edt_distancia)
 
         val consumo = intent.getStringExtra("123")
@@ -36,9 +36,9 @@ class MainActivity4 : AppCompatActivity() {
             } else {
 
                 val intent = Intent(this, activity_result::class.java)
-                intent.putExtra("123", distancia)
-                intent.putExtra("123", consumo)
-                intent.putExtra("123", preco)
+                intent.putExtra("distancia", distancia)
+                intent.putExtra("consumo", consumo)
+                intent.putExtra("preco", preco)
                 startActivity(intent)
             }
         }

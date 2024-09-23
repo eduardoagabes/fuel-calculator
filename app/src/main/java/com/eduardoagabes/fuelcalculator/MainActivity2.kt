@@ -32,8 +32,8 @@ class MainActivity2 : AppCompatActivity() {
                 ).show()
             } else {
 
-                intent.putExtra("123", preco)
                 val intent = Intent(this, MainActivity3::class.java)
+                intent.putExtra("preco", preco)
                 startActivity(intent)
             }
         }

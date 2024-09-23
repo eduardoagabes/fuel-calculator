@@ -15,17 +15,16 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_proximo2)
+        val btnIniciar = findViewById<Button>(R.id.btn_proximo_2)
         val edtConsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
 
         val preco = intent.getBundleExtra("123")
 
         btnIniciar.setOnClickListener {
 
-            val consumo = edtConsumo.text
-            val consumoStr: String = edtConsumo.text.toString()
+            val consumo = edtConsumo.text.toString()
 
-            if (consumoStr == "") {
+            if (consumo == "") {
                 Snackbar.make(
                     edtConsumo,
                     "Preencha o campo vazío",
@@ -34,8 +33,8 @@ class MainActivity3 : AppCompatActivity() {
             } else {
 
                 val intent = Intent(this, MainActivity4::class.java)
-                intent.putExtra("123", preco)
-                intent.putExtra("123", consumo)
+                intent.putExtra("preco", preco)
+                intent.putExtra("consumo", consumo)
                 startActivity(intent)
             }
         }
