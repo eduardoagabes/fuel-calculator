@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".ConsumptionActivity">
 
     <Button
         android:id="@+id/btn_proximo_2"
@@ -34,6 +34,7 @@
             android:id="@+id/edt_consumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
             android:hint="Ex: 5km/l"
             android:inputType="number"
             android:maxLength="2" />
@@ -45,10 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:textStyle="bold"
         android:layout_marginBottom="8dp"
         android:text="Consumo do Carro"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_descricao_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
