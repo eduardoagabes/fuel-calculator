@@ -8,7 +8,7 @@
     tools:context=".MainActivity3">
 
     <Button
-        android:id="@+id/btn_proximo2"
+        android:id="@+id/btn_proximo_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
@@ -26,7 +26,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="72dp"
         app:hintEnabled="false"
-        app:layout_constraintBottom_toTopOf="@+id/btn_proximo2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_proximo_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -40,7 +40,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_descricao_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -49,12 +49,12 @@
         android:layout_marginBottom="8dp"
         android:text="Consumo do Carro"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/tv_descricao_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_descricao_6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
