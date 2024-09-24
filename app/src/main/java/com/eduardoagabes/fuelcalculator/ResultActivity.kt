@@ -29,7 +29,7 @@ class ResultActivity : AppCompatActivity() {
         tvDistancia.text = distancia.toString()
 
         val resultFormatado = String.format("%.2f", result)
-        tvResult.text = "$ $resultFormatado"
+        tvResult.text = "$$resultFormatado"
 
 
 

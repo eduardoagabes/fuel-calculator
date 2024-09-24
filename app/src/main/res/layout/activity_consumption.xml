@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_100"
     tools:context=".ConsumptionActivity">
 
     <Button
@@ -37,7 +38,7 @@
             android:background="@drawable/rounded_bg"
             android:hint="Ex: 5km/l"
             android:inputType="number"
-            android:maxLength="2" />
+            android:maxLength="3" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -47,6 +48,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
         android:text="Consumo do Carro"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -62,7 +64,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="20dp"
         android:text="Passo 2 de 3"
-        android:textColor="@color/red"
+        android:textColor="@color/blue"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
