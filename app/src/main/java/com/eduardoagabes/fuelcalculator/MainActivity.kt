@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, PriceActivity::class.java)
             startActivity(intent)
-
+            finish()
         }
     }
 }

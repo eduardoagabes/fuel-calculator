@@ -8,6 +8,28 @@
     android:background="@color/primary_100"
     tools:context=".DistanceActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vg_header_price"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_price"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_margin="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_distance" />
+
+    </LinearLayout>
+
+
     <Button
         android:id="@+id/btn_proximo_3"
         android:layout_width="match_parent"
