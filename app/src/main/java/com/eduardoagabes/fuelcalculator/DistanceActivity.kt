@@ -3,6 +3,7 @@ package com.eduardoagabes.fuelcalculator
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
@@ -18,7 +19,11 @@ class DistanceActivity : AppCompatActivity() {
         val consumo = intent.getFloatExtra("consumo", 0f)
         val preco = intent.getFloatExtra("preco", 0f)
 
+        val btnBack = findViewById<ImageButton>(R.id.btn_arrow_distance)
 
+        btnBack.setOnClickListener {
+            finish()
+        }
 
         btnIniciar.setOnClickListener {
 
