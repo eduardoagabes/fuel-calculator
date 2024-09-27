@@ -11,7 +11,7 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_novo_calculo)
+        val btn_next_launcher = findViewById<Button>(R.id.btn_novo_calculo)
 
         val distancia = intent.getFloatExtra("distancia", 0f)
         val consumo = intent.getFloatExtra("consumo", 0f)
@@ -29,11 +29,11 @@ class ResultActivity : AppCompatActivity() {
         tvDistancia.text = distancia.toString()
 
         val resultFormatado = String.format("%.2f", result)
-        tvResult.text = "$$resultFormatado"
+        tvResult.text = "R$$resultFormatado"
 
 
 
-        btnIniciar.setOnClickListener {
+        btn_next_launcher.setOnClickListener {
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

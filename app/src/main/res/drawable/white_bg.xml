@@ -5,7 +5,7 @@
         android:topRightRadius="0dp"
         android:topLeftRadius="0dp"
         android:bottomLeftRadius="180dp"
-        android:bottomRightRadius="388dp" >
+        android:bottomRightRadius="380dp" >
     </corners>
 
 </shape>

@@ -26,13 +26,13 @@
             android:src="@drawable/ic_arrow_back" />
 
         <ImageView
-            android:id="@+id/ic_price"
-            android:layout_width="match_parent"
-            android:layout_height="320dp"
-            android:layout_margin="53dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_consumption" />
 
     </LinearLayout>
 

@@ -15,7 +15,7 @@ class ConsumptionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consumption)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_proximo_2)
+        val btnNext_two = findViewById<Button>(R.id.btn_proximo_2)
         val edtConsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
 
         val preco = intent.getFloatExtra("preco", 0f)
@@ -26,7 +26,7 @@ class ConsumptionActivity : AppCompatActivity() {
             finish()
         }
 
-        btnIniciar.setOnClickListener {
+        btnNext_two.setOnClickListener {
 
             val consumoStr: String = edtConsumo.text.toString()
 

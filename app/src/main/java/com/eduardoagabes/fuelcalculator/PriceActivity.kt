@@ -13,7 +13,7 @@ class PriceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_price)
 
-        val btnIniciar = findViewById<Button>(R.id.btn_proximo)
+        val btnNext_two = findViewById<Button>(R.id.btn_proximo)
         val edtPreco = findViewById<TextInputEditText>(R.id.edt_preco)
 
         val btnBack = findViewById<ImageButton>(R.id.btn_arrow_price)
@@ -22,7 +22,7 @@ class PriceActivity : AppCompatActivity() {
             finish()
         }
 
-        btnIniciar.setOnClickListener {
+        btnNext_two.setOnClickListener {
 
             val precoStr: String = edtPreco.text.toString()
 
