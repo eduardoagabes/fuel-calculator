@@ -11,7 +11,7 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val btn_next_launcher = findViewById<Button>(R.id.btn_novo_calculo)
+        val btnNextLauncher = findViewById<Button>(R.id.btn_novo_calculo)
 
         val distancia = intent.getFloatExtra("distancia", 0f)
         val consumo = intent.getFloatExtra("consumo", 0f)
@@ -33,7 +33,7 @@ class ResultActivity : AppCompatActivity() {
 
 
 
-        btn_next_launcher.setOnClickListener {
+        btnNextLauncher.setOnClickListener {
 
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

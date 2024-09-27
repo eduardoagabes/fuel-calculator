@@ -13,7 +13,7 @@ class DistanceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_distance)
 
-        val btnNext_three = findViewById<Button>(R.id.btn_proximo_3)
+        val nextThree = findViewById<Button>(R.id.btn_proximo_3)
         val edtDistancia = findViewById<TextInputEditText>(R.id.edt_distancia)
 
         val consumo = intent.getFloatExtra("consumo", 0f)
@@ -25,7 +25,7 @@ class DistanceActivity : AppCompatActivity() {
             finish()
         }
 
-        btnNext_three.setOnClickListener {
+        nextThree.setOnClickListener {
 
             val distanciaStr: String = edtDistancia.text.toString()
 
