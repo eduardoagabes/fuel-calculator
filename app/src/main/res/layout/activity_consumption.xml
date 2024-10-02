@@ -9,9 +9,9 @@
     tools:context=".ConsumptionActivity">
 
     <LinearLayout
+        android:id="@+id/vg_header_consumption"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/vg_header_price"
+        android:layout_height="400dp"
         android:background="@drawable/white_bg"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,11 +26,10 @@
             android:src="@drawable/ic_arrow_back" />
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
             android:src="@drawable/ic_consumption" />
 
     </LinearLayout>
@@ -76,8 +75,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/white"
         android:text="Consumo do Carro"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_descricao_6"

@@ -4,8 +4,8 @@
     <corners
         android:topRightRadius="0dp"
         android:topLeftRadius="0dp"
-        android:bottomLeftRadius="180dp"
-        android:bottomRightRadius="380dp" >
+        android:bottomLeftRadius="260dp"
+        android:bottomRightRadius="600dp" >
     </corners>
 
 </shape>
