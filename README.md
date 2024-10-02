@@ -4,11 +4,11 @@ Este proyecto desarrollado en Android nativo con el lenguaje Kotlin es una aplic
 
 ## 📸 Screenshots
 
-<img src="https://github.com/user-attachments/assets/284e0d03-91cb-44f1-b7cc-b85bcfd03fd4" width=260/>
-<img src="https://github.com/user-attachments/assets/0fbaa2f6-4d68-4195-894a-35eb49d4877b" width=260/>
-<img src="https://github.com/user-attachments/assets/2186d26a-1b47-4775-840e-359888f17fb3" width=260/>
-<img src="https://github.com/user-attachments/assets/f25c633c-92ef-458d-8247-067e847674f3" width=260/> 
-<img src="https://github.com/user-attachments/assets/03d95363-f835-47ab-bf57-a5a9317bad90" width=260/>
+<img src="https://github.com/user-attachments/assets/26779e9e-1b71-4b39-8ef6-47759e29a689" width=260/>
+<img src="https://github.com/user-attachments/assets/6752301d-e31f-4607-a687-892e30800616" width=260/>
+<img src="https://github.com/user-attachments/assets/21f193a2-fd2d-49df-966a-42a127a7520a" width=260/>
+<img src="https://github.com/user-attachments/assets/e61224a4-231b-433b-b95c-d62f10c64761" width=260/> 
+<img src="https://github.com/user-attachments/assets/2eb5301b-32cf-4c69-9fea-be0a48461b15" width=260/>
 
 ## Tecnologías
 - Activity
